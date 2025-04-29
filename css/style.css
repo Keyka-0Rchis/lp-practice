@@ -9,7 +9,10 @@ body{
     margin: 0 auto;
 }
 
-header i{
+header{
+    padding-top: 10px;
+}
+.fa-archway{
     color: #777;
 }
 header a{
@@ -24,6 +27,11 @@ header a{
 header a:hover{
     color: #333;
     transition: all 0.3s;
+}
+.fa-bars{
+    float: right;
+    display: none;
+    color: #D3D3D3;
 }
 
 .keyvisual{
@@ -49,7 +57,7 @@ header a:hover{
 
 .news{
     background: #e3f2fd;
-    padding-top: 50px;
+    padding: 50px 0 0 0;
 }
 .news-wrapper{
     display: flex;
@@ -62,7 +70,8 @@ header a:hover{
 }
 .news-text-wrapper{
     text-align: center;
-    width: 626px;
+    width: 100%;
+    max-width: 626px;
 }
 .news-text-wrapper h3{
     margin: 20px 0 35px 0;
@@ -119,6 +128,7 @@ header a:hover{
     font-size: 16px;
     border-collapse: collapse;
     vertical-align: middle;
+    table-layout: fixed;
 }
 .plan-table thead{
     background: #6ba7eb;
@@ -127,7 +137,7 @@ header a:hover{
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
     line-height: 26px;
-    padding:10px 0
+    padding:10px 0;
 }
 .plan-table th:first-child{
     border-left: none;
@@ -150,7 +160,8 @@ header a:hover{
     text-align: center;
 }
 .sns a{
-    width: 185px;
+    width: 100%;
+    max-width: 185px;
     padding: 25px;
 }
 .sns i{

@@ -1,0 +1,106 @@
+@media  all and (max-width:1199px) {
+    .inner{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .keyvisual{
+        padding: 250px 0;
+    }
+
+    .news{
+        padding: 50px 0;
+    }
+    .news-wrapper{
+        display: block;
+        text-align: center;
+    }
+    .news-wrapper img{
+        width: 100%;
+        max-width: 250px;
+        margin: 0;
+    }
+    .news-text-wrapper{
+        margin: 0 auto;
+    }
+    .news-text-wrapper p{
+        width: 100%;
+    }
+
+    .skills h3{  
+        font-size: 40px;
+        letter-spacing: 10px;
+        margin-bottom: 50px;
+    }
+    .icon-wrapper{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .icon{
+        max-width: 300px;
+        display:block;
+        margin: 0 auto;
+    }
+    .icon img{
+        max-width: 300px;
+        opacity: 0.7;
+    }
+    .icon img:hover{
+        opacity: 1;
+    }
+    .icon:nth-child(3n){
+        padding-bottom: 80px;
+    }
+    .icon:nth-child(3n+2){
+        padding: 0;
+    }
+
+    .plan-table th,td{
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        line-height: 26px;
+        padding:10px 0;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+@media  all and (max-width:767px) {
+    header a{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+
+    .keyvisual{
+        padding: 200px 0;
+    }
+    .title-wrapper h1{
+        font-size: 40px;
+        word-break: break-word;
+    }
+    .title-wrapper h2{
+        font-size: 30px;
+        word-break: break-word;
+    }
+
+    .plan-table th{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .plan-table td{
+        font-size: 12px;
+    }
+
+    .sns-wrapper{
+        margin: 0 auto;
+        display: block;
+    }
+    .sns a{
+        display: inline-block;
+        width: 100%;
+        padding: 50px 15px;
+    }
+}
