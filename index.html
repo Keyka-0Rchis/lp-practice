@@ -9,117 +9,138 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/animation.css" />
   </head>
   <body>
-    <header>
-      <div class="inner">
-        <i class="fas fa-archway fa-3x"></i>
-        <a class="contact-button" href="#">Contact</a>
-        <i class="fa-solid fa-bars fa-2x"></i>
-      </div>
-    </header>
-    <main>
-      <section class="keyvisual">
+    <div id="loading">
+      <div class="loading-text">Loading...</div>
+    </div>
+    <div id="main-content">
+      <header>
         <div class="inner">
-          <div class="title-wrapper">
-            <h1 class="main-title">WEB PRODUCTION COMPANY</h1>
-            <h2 class="sub-title">DIRECTION,CONTENT MARKETING</h2>
-          </div>
+          <i class="fas fa-archway fa-3x"></i>
+          <a class="contact-button" href="#">Contact</a>
+          <i class="fa-solid fa-bars fa-2x"></i>
         </div>
-      </section>
-      <section class="news">
-        <div class="inner">
-          <div class="news-wrapper">
-            <div class="news-img-wrapper" data-scroll="fadeFromLeft">
-              <img class="speech" src="images/news/news.png" alt="吹き出し">
-            </div>
-            <div class="news-text-wrapper" data-scroll="fadeFromRight">
-              <h3 class="section-title">NEWS</h3>
-              <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint</p>
+      </header>
+      <main>
+        <section class="keyvisual">
+          <div class="inner">
+            <div class="title-wrapper">
+              <h1 class="main-title">WEB PRODUCTION COMPANY</h1>
+              <h2 class="sub-title">DIRECTION,CONTENT MARKETING</h2>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="skills">
-        <div class="inner">
-          <h3 class="section-title">WE ARE SKILLS</h3>
-          <div class="icon-wrapper">
-            <a class="icon" href="#"><img src="images/icons/photo.png" alt="写真"></a> 
-            <a class="icon" href="#"><img src="images/icons/flower.png" alt="花"></a> 
-            <a class="icon" href="#"><img src="images/icons/data.png" alt="データ"></a> 
-            <a class="icon" href="#"><img src="images/icons/location.png" alt="ピン"></a> 
-            <a class="icon" href="#"><img src="images/icons/calender.png" alt="カレンダー"></a> 
-            <a class="icon" href="#"><img src="images/icons/security.png" alt="セキュリティ"></a> 
+        </section>
+        <section class="news">
+          <div class="inner">
+            <div class="news-wrapper">
+              <div class="news-img-wrapper" data-scroll="fadeFromLeft">
+                <img class="speech" src="images/news/news.png" alt="吹き出し">
+              </div>
+              <div class="news-text-wrapper" data-scroll="fadeFromRight">
+                <h3 class="section-title">NEWS</h3>
+                <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="plan">
-        <div class="inner">
-          <h3 class="section-title">SELECT PLAN</h3>
-          <table class="plan-table">
-            <thead>
-              <tr>
-                <th scope="col">PLAN</th>
-                <th scope="col">BASIC PLAN</th>
-                <th scope="col">STANDARD PLAN</th>
-                <th scope="col">ENTERISE PLAN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">PLICE</th>
-                <td>&yen;100,000</td>
-                <td>&yen;200,000</td>
-                <td>&yen;300,000</td>
-              </tr>
-              <tr>
-                <th scope="row">DELIVERY</th>
-                <td>Menuscript</td>
-                <td>HTML</td>
-                <td>Menuscript,HTML,PSD</td>
-              </tr>
-              <tr>
-                <th scope="row">ANALYSIS</th>
-                <td>〇</td>
-                <td>〇</td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th scope="row">IMPROVEMENT</th>
-                <td>×</td>
-                <td>〇</td>
-                <td>〇</td>
-              </tr>
-              <tr>
-                <th scope="row">DESIGN</th>
-                <td>×</td>
-                <td>×</td>
-                <td>〇</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <nav class="sns">
-        <div class="inner">
-          <div class="sns-wrapper">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fas fa-comment-dots"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
+        </section>
+        <section class="skills">
+          <div class="inner">
+            <h3 class="section-title">WE ARE SKILLS</h3>
+            <div class="carousel-controls">
+              <button id="prev" class="carousel-button" aria-label="前へ">
+                <i class="fa-solid fa-left-long"></i>
+              </button>
+              <button id="next" class="carousel-button" aria-label="次へ">
+                <i class="fa-solid fa-right-long"></i>
+              </button>
+            </div>
+            <div class="carousel-wrapper">
+              <div class="icon-wrapper">
+                <a class="icon dummy"></a>
+                <a class="icon" href="#"><img src="images/icons/photo.png" alt="写真"></a> 
+                <a class="icon" href="#"><img src="images/icons/flower.png" alt="花"></a> 
+                <a class="icon" href="#"><img src="images/icons/data.png" alt="データ"></a> 
+                <a class="icon" href="#"><img src="images/icons/location.png" alt="ピン"></a> 
+                <a class="icon" href="#"><img src="images/icons/calender.png" alt="カレンダー"></a> 
+                <a class="icon" href="#"><img src="images/icons/security.png" alt="セキュリティ"></a> 
+                <a class="icon dummy"></a>
+              </div>
+            </div>
           </div>
+        </section>
+        <section class="plan">
+          <div class="inner">
+            <h3 class="section-title">SELECT PLAN</h3>
+            <table class="plan-table">
+              <thead>
+                <tr>
+                  <th scope="col">PLAN</th>
+                  <th scope="col">BASIC PLAN</th>
+                  <th scope="col">STANDARD PLAN</th>
+                  <th scope="col">ENTERISE PLAN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">PLICE</th>
+                  <td>&yen;100,000</td>
+                  <td>&yen;200,000</td>
+                  <td>&yen;300,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">DELIVERY</th>
+                  <td>Menuscript</td>
+                  <td>HTML</td>
+                  <td>Menuscript,HTML,PSD</td>
+                </tr>
+                <tr>
+                  <th scope="row">ANALYSIS</th>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th scope="row">IMPROVEMENT</th>
+                  <td>×</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th scope="row">DESIGN</th>
+                  <td>×</td>
+                  <td>×</td>
+                  <td>〇</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <nav class="sns">
+          <div class="inner">
+            <div class="sns-wrapper">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fas fa-comment-dots"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </nav>
+      </main>
+      <footer>
+        <div class="inner">
+          <p class="copyright">Copyright(c)</p>
         </div>
-      </nav>
-    </main>
-    <footer>
-      <div class="inner">
-        <p class="copyright">Copyright(c)</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script type="module" src="script/action/scroll.js"></script>
+    <script type="module" src="script/action/loading.js"></script>
+    <script type="module" src="script/action/iconSlide.js"></script>
   </body>
 </html>

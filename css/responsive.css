@@ -30,7 +30,7 @@
     .skills h3{
         margin-bottom: 50px;
     }
-    .icon-wrapper{
+    /* .icon-wrapper{
         display: block;
         width: 100%;
         text-align: center;
@@ -50,7 +50,7 @@
     }
     .icon:nth-child(3n+2){
         padding: 0;
-    }
+    } */
 }
 
 @media  all and (max-width:767px) {
